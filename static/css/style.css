@@ -1,0 +1,56 @@
+.benefit-section {
+    color: #fff;
+    margin-bottom: 35px;
+    padding: 35px 0;
+    background-color: #383d45;
+}
+
+.footer {
+    color: #383d45;
+    padding: 50px;
+    background-color: #f5cf00;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   ul {
+    padding-left: 0; /* Сдвигаем список влево */
+   }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+nav.navbar .nav-link {
+    height: 70px;
+    padding: 0 .5rem;
+    line-height: 70px;
+}
+
+.navbar-nav .nav-link{
+    font-size: 18px;
+}
+
+.Telephone{
+    color: #000;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.BtnTerex{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.footer .footer-phone .footer-phone-item {
+    color: #000;
+    text-decoration: none;
+}
+
+.BtnTerex:focus{outline:0}
+
+.img_tex img{
+    max-width: 100%;
+}
