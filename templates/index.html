@@ -3,234 +3,258 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ЮниТехник</title>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЮниТехник</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 
 <body>
-  <main>
+<main>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #383d45">
-        <div class="container-xxl">
-          <a class="navbar-brand" href="index.html">
-            <img src="{% static "img/UniTech_logo.svg" %}" height="50" alt="Юнитехник">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#arenda">Аренда</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">Контакты</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Click Me</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #383d45">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static "img/UniTech_logo.svg" %}" height="50" alt="Юнитехник">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#arenda">Аренда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Click Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <section>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{% static "img/1.png" %}" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="{% static "img/2.png" %}" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="{% static "img/3.png" %}" class="d-block w-100" alt="...">
-          </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static "img/1.png" %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static "img/2.png" %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static "img/3.png" %}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
     </section>
     <ul>
-      <section>
-        <div class="container-xxl">
-          <li id="arenda">
-            <h2 class="my-3 text-center">Аренда спецтехники в московской области</h2>
-            <p class="text-center">Мы предлагаем аренду спецтехники широкого назначения на Северо-Западе Москвы и
-              Московской области
-              для осуществления строительных, дорожно-ремонтных, демонтажных работ. Помимо этого - предоставляем услуги
-              по
-              доставке и перевозке материалов самосвалами разного объёма.</p>
-            <div class="container-xxl my-3">
-              <div class="row my-5">
-                <div class="col-md-6 text-center">
-                  <button class="BtnTerex" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    <div class="img_tex">
-                      <img src="{% static "img/Terex3.png" %}" alt="Terex">
+        <section>
+            <div class="container-xxl">
+                <li id="arenda">
+                    <h2 class="my-3 text-center">Аренда спецтехники в московской области</h2>
+                    <p class="text-center">Мы предлагаем аренду спецтехники широкого назначения на Северо-Западе Москвы
+                        и
+                        Московской области
+                        для осуществления строительных, дорожно-ремонтных, демонтажных работ. Помимо этого -
+                        предоставляем услуги
+                        по
+                        доставке и перевозке материалов самосвалами разного объёма.</p>
+                    <div class="container-xxl my-3">
+                        <div class="row my-5">
+                            <div class="col-md-6 text-center">
+                                <button class="BtnTerex" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                    <div class="img_tex">
+                                        <img src="{% static "img/Terex3.png" %}" alt="Terex">
+                                    </div>
+                                </button>
+                                <h4>Экскаваторы-погрузчики</h4>
+                                <p>Разработка и рытьё котлованов, копка под фундамент, <br> копка траншей, чистка снега.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <button class="BtnTerex" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                    <div class="img_tex">
+                                        <img src="{% static "img/Truck2.png" %}" alt="Truck">
+                                    </div>
+                                </button>
+                                <h4>Самосвалы</h4>
+                                <p>Доставка и перевозка сыпучих материалов, <br> вывоз строительного мусора, снега.</p>
+                            </div>
+                        </div>
+
+                        <!-----Modal---->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Список техники, доступной к
+                                            заказу</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Название</th>
+                                                <th scope="col">Описание</th>
+                                            </tr>
+                                            {% for post in tch %}
+                                                <tr>
+                                                    <td>{{ post.name }}</td>
+                                                    <td>{{ post.description }}</td>
+                                                </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#contacts">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-----Modal---->
+        </section>
+
+        <section class="benefit-section">
+            <div class="container-xxl">
+                <h2 class="my-3 text-center">Преимущества работы с нами </h2>
+            </div>
+            </h2>
+            <div class="container-xxl my-5">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="{% static "img/worker2.png" %}" width="70px" height="70px">
+                        <div class="my-2">
+                            <p>Квалифицированные специалисты</p>
+                        </div>
                     </div>
-                  </button>
-                  <h4>Экскаваторы-погрузчики</h4>
-                  <p>Разработка и рытьё котлованов, копка под фундамент, <br> копка траншей, чистка снега.</p>
+                    <div class="col-md-4 text-center">
+                        <img src="{% static "img/calendar (1).png" %}" width="70px" height="70px">
+                        <div class="my-2">
+                            <p>Работаем без наценки <br> в выходные и праздничные дни</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="{% static "img/excavator.png" %}" width="70px" height="70px">
+                        <div class=my-2>
+                            <p>Техника ведущих марок</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-4 text-center">
+                        <img src="{% static "img/gas.png" %}" width="70px" height="70px">
+                        <div class=my-2>
+                            <p>Всегда заправлена и готова к работе</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-4 text-center">
+                        <img src="{% static "img/wall-clock.png" %}" width="70px" height="70px">
+                        <div class=my-2>
+                            <p>Подача техники в день обращения</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 text-center">
-                  <button class="BtnTerex" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    <div class="img_tex">
-                      <img src="{% static "img/Truck2.png" %}" alt="Truck">
+            </div>
+            </div>
+        </section>
+        <section>
+            <li id="contacts">
+                <div class="container my-3">
+                    <h2 class="text-center"> Наши контакты </h2>
+                    <p><a href="contacts"></a></p>
+                    <div class="row my-4">
+                        <div class="col-md-6 my-4">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-6 col-sm-6 text-center"><img src="{% static "img/location.png" %}"
+                                                                                 height="55px" width="55px">
+                                    </div>
+                                    <div class="col-6 col-sm-6 text-center">
+                                        <h5>Московская Область, Щёлковский р-он, п.Серково</h5>
+                                    </div>
+
+                                    <div class="w-100"></div>
+                                    <div class="my-4"></div>
+
+                                    <div class="col-6 col-sm-6 text-center"><img src="{% static "img/call.png" %}"
+                                                                                 height="55px" width="55px"></div>
+                                    <div class="col-6 col-sm-6 text-center">
+                                        <h5>
+                                            <a class="Telephone" href="tel:+7(925)485-34-49">+7(925)485-34-49</a>
+                                            <br>
+                                            <a class="Telephone" href="tel:+7(916)964-28-83">+7(916)964-28-83</a>
+                                        </h5>
+                                    </div>
+
+                                    <div class="w-100"></div>
+                                    <div class="my-4"></div>
+
+                                    <div class="col-6 col-sm-6 text-center"><img src="{% static "img/clock.png" %}"
+                                                                                 height="55px" width="55px"></div>
+                                    <div class="col-6 col-sm-6 text-center">
+                                        <h5>Пн - Вс <br> 9:00 - 21:00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center my-4">
+                            <script type="text/javascript">
+                                var map;
+                                DG.then(function () {
+                                    map = DG.map('map', {
+                                        center: [55.897863, 37.967598],
+                                        zoom: 13
+                                    });
+
+                                    DG.marker([55.897863, 37.967598]).addTo(map).bindPopup('Щёлковский р-он, д-ня Серково');
+                                });
+                            </script>
+                            <div id="map" style="width:100%; height:450px"></div>
+                        </div>
                     </div>
-                  </button>
-                  <h4>Самосвалы</h4>
-                  <p>Доставка и перевозка сыпучих материалов, <br> вывоз строительного мусора, снега.</p>
                 </div>
-              </div>
-
-              <!-----Modal---->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Форма заказа</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-outline-success">Заказать</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-----Modal---->
-      </section>
-
-      <section class="benefit-section">
-        <div class="container-xxl">
-            <h2 class="my-3 text-center">Преимущества работы с нами </h2>
-        </div>
-        </h2>
-        <div class="container-xxl my-5">
-          <div class="row">
-            <div class="col-md-4 text-center">
-              <img src="{% static "img/worker2.png" %}" width="70px" height="70px">
-              <div class="my-2">
-                <p>Квалифицированные специалисты</p>
-              </div>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="{% static "img/calendar (1).png" %}" width="70px" height="70px">
-              <div class="my-2">
-                <p>Работаем без наценки <br> в выходные и праздничные дни</p>
-              </div>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="{% static "img/excavator.png" %}" width="70px" height="70px">
-              <div class=my-2>
-                <p>Техника ведущих марок</p>
-              </div>
-            </div>
-            <div class="col-md-6 my-4 text-center">
-              <img src="{% static "img/gas.png" %}" width="70px" height="70px">
-              <div class=my-2>
-                <p>Всегда заправлена и готова к работе</p>
-              </div>
-            </div>
-            <div class="col-md-6 my-4 text-center">
-              <img src="{% static "img/wall-clock.png"%}" width="70px" height="70px">
-              <div class=my-2>
-                <p>Подача техники в день обращения</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
-      <section>
-        <li id="contacts">
-          <div class="container my-3">
-            <h2 class="text-center"> Наши контакты </h2>
-            <div class="row my-4">
-              <div class="col-md-6 my-4">
-                <div class="container">
-                  <div class="row">
-
-                    <div class="col-6 col-sm-6 text-center"><img src="{% static "img/location.png" %}" height="55px" width="55px">
-                    </div>
-                    <div class="col-6 col-sm-6 text-center">
-                      <h5>Московская Область, Щёлковский р-он, п.Серково</h5>
-                    </div>
-
-                    <div class="w-100"></div>
-                    <div class="my-4"></div>
-
-                    <div class="col-6 col-sm-6 text-center"><img src="{% static "img/call.png" %}" height="55px" width="55px"></div>
-                    <div class="col-6 col-sm-6 text-center">
-                      <h5>
-                        <a class="Telephone" href="tel:+7(925)485-34-49">+7(925)485-34-49</a>
-                        <br>
-                        <a class="Telephone" href="tel:+7(916)964-28-83">+7(916)964-28-83</a>
-                      </h5>
-                    </div>
-
-                    <div class="w-100"></div>
-                    <div class="my-4"></div>
-
-                    <div class="col-6 col-sm-6 text-center"><img src="{% static "img/clock.png" %}" height="55px" width="55px"></div>
-                    <div class="col-6 col-sm-6 text-center">
-                      <h5>Пн - Вс <br> 9:00 - 21:00</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 text-center my-4">
-                <script type="text/javascript">
-                  var map;
-                  DG.then(function () {
-                    map = DG.map('map', {
-                      center: [55.897863, 37.967598],
-                      zoom: 13
-                    });
-
-                    DG.marker([55.897863, 37.967598]).addTo(map).bindPopup('Щёлковский р-он, д-ня Серково');
-                  });
-                </script>
-                <div id="map" style="width:100%; height:450px"></div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </section>
+            </li>
+        </section>
     </ul>
     <section class="footer">
-      <div class="container text-center">
-        <a>© 2020 г. «ЮниТехник»</a>
-      </div>
+        <div class="container text-center">
+            <a>© 2020 г. «ЮниТехник»</a>
+        </div>
     </section>
-  </main>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+</main>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
