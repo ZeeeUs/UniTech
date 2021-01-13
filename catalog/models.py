@@ -3,6 +3,8 @@ from django.urls import reverse
 
 import uuid
 
+from django.utils import timezone
+
 
 class Technik(models.Model):
     name = models.CharField(max_length=100)
@@ -35,8 +37,10 @@ class Order(models.Model):
     territory = models.ForeignKey('Territory', on_delete=models.SET_NULL, null=True)
     duration = models.ForeignKey('OrderDuration', on_delete=models.PROTECT)
     note = models.CharField(max_length=255)
-    datee = models.DateField
+    date = models.DateField(auto_now_add=False, default=timezone.now)
 
+    class Meta:
+        ordering = ["date"]
 
     def __str__(self):
         return
