@@ -6,4 +6,11 @@ from .models import Technik, Territory, OrderDuration, Order
 admin.site.register(Technik)
 admin.site.register(Territory)
 admin.site.register(OrderDuration)
-admin.site.register(Order)
+
+
+# admin.site.register(Order)
+
+@admin.register(Order)
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ('customer', 'phone_number', 'date', 'technik', 'territory', 'duration')
+    list_filter = ('date', 'territory')
